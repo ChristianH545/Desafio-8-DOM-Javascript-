@@ -33,7 +33,7 @@ function Input1() {
     let valorDolar = dolarHoy.precio;
     let conversion = moneda.formula1(valorPesos, valorDolar);
 
-    inputResultadoConversion1.value = conversion.toFixed(2);
+    inputResultadoConversion1.value = `${conversion.toFixed(2)} Dolares`;
   });
 }
 function Input2() {
@@ -47,7 +47,7 @@ function Input2() {
     let valorEuros = euroHoy.precio;
     let conversion = moneda.formula2(valorPesos, valorEuros);
 
-    inputResultadoConversion2.value = conversion.toFixed(2);
+    inputResultadoConversion2.value = `${conversion.toFixed(2)} Euros `;
   });
 }
 function Input3() {
@@ -61,7 +61,7 @@ function Input3() {
     let valorEuros = euroHoy.precio;
     let conversion = moneda.formula3(valorPesos, valorEuros);
 
-    inputResultadoConversion3.value = conversion.toFixed(2);
+    inputResultadoConversion3.value = `${conversion.toFixed(2)} Pesos-Ars`;
   });
 }
 function Input4() {
@@ -75,14 +75,12 @@ function Input4() {
     let valorDolar = dolarHoy.precio;
     let conversion = moneda.formula4(valorPesos, valorDolar);
 
-    inputResultadoConversion4.value = conversion.toFixed(2);
+    inputResultadoConversion4.value = `${conversion.toFixed(2)} Pesos-Ars`;
   });
 }
 /* ------variables de mis objetos ------ */
 const dolarHoy = new Monedas("Dolar", 201);
-const euroHoy = new Monedas("Euro", 232);
-const pesosD = new Monedas("Pesos-Ars", 201);
-const pesosC = new Monedas("Pesos-Ars", 232);
+const euroHoy = new Monedas("Euro", 231);
 
 /* ------ Function Manipulacion del DOM  ------ */
 Input1();
